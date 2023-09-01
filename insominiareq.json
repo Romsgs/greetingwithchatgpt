@@ -1,0 +1,79 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2023-09-01T00:00:00.000Z",
+  "resources": [
+    {
+      "_type": "workspace",
+      "_id": "ApiForETL",
+      "parentId": null,
+      "name": "Your API Collection",
+      "description": "",
+      "scope": null,
+      "children": [
+        {
+          "_type": "request",
+          "_id": "your-request-1-id",
+          "parentId": "ApiForETL",
+          "name": "Create User",
+          "description": "",
+          "method": "POST",
+          "url": "{{BASE_URL}}/users/",
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"johndoe@example.com\",\n  \"greeting_phrase\": \"Hello, World!\",\n  \"password\": \"your_password\"\n}"
+          }
+        },
+        {
+          "_type": "request",
+          "_id": "your-request-2-id",
+          "parentId": "ApiForETL",
+          "name": "Get User",
+          "description": "",
+          "method": "GET",
+          "url": "{{BASE_URL}}/users/1"
+        },
+        {
+          "_type": "request",
+          "_id": "your-request-3-id",
+          "parentId": "ApiForETL",
+          "name": "Update User",
+          "description": "",
+          "method": "PUT",
+          "url": "{{BASE_URL}}/users/1",
+          "headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"name\": \"Updated Name\",\n  \"email\": \"updatedemail@example.com\",\n  \"greeting_phrase\": \"Updated Greeting\",\n  \"password\": \"updated_password\"\n}"
+          }
+        },
+        {
+          "_type": "request",
+          "_id": "your-request-4-id",
+          "parentId": "ApiForETL",
+          "name": "Delete User",
+          "description": "",
+          "method": "DELETE",
+          "url": "{{BASE_URL}}/users/1"
+        }
+      ]
+    }
+  ],
+  "environment": {},
+  "settings": {
+    "general": {
+      "workspaceName": "Your API Collection"
+    }
+  }
+}
