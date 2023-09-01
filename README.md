@@ -1,4 +1,4 @@
-# Greeting with ChatGPT
+# Greeting with ChatGPT - WINDOWS
 
 This is a small project that adds generative AI messages to defined places.
 
@@ -33,7 +33,7 @@ Follow these steps to set up and run the project on a Windows machine:
 
 ---------------------------------------------------------------------------------------------------------
 
-# Greeting with ChatGPT
+# Greeting with ChatGPT - LINUX
 
 This is a small project that adds generative AI messages to defined places.
 
@@ -41,33 +41,28 @@ This is a small project that adds generative AI messages to defined places.
 
 Follow these steps to set up and run the project on a Linux machine:
 
-1. Clone the project repository:
-    ```bash
-    git clone https://github.com/your-username/your-project.git
-    cd your-project
-    ```
 
-2. Create a virtual environment:
+1. Create a virtual environment:
     ```bash
     python3 -m venv venv
     ```
 
-3. Activate the virtual environment:
+2. Activate the virtual environment:
     ```bash
     source venv/bin/activate
     ```
 
-4. Install project dependencies from requirements.txt:
+3. Install project dependencies from requirements.txt:
     ```bash
     python3 -m pip install -r requirements.txt
     ```
 
-5. Start the web application using Uvicorn with auto-reload:
+4. Start the web application using Uvicorn with auto-reload:
     ```bash
     uvicorn main:app --reload
     ```
 
-6. In another terminal window, run the ETL script (etl.py):
+5. In another terminal window, run the ETL script (etl.py):
     ```bash
     python3 etl.py
     ```
